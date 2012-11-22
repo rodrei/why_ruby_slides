@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>why_ruby_slides</title>
+    <title>Why Ruby?</title>
     <meta charset='utf-8' />
     <meta content='width=1024, user-scalable=no' name='viewport' />
     <!-- deck.js's core css -->
@@ -27,29 +27,406 @@
     <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h1>A Title Slide</h1>
+        <h1>Why Ruby?</h1>
         
-        <h2>me@example.com</h2>
+        <h2>by Rodrigo Pavano</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Why this talk?</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Matz: It's impossible to design a perfect language</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Two ways to look at a language</h1>
+        
+        <h2>What can be done with it?</h2>
+        
+        <h2>How does the user feel using it?</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Ruby focuses on the HOW and not so much on the WHAT</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Ruby focuses on PEOPLE and not on MACHINES</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='dark slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h1>Ruby principles</h1>
+
+<ul>
+<li>Uniform access principle</li>
+<li>Everything is an expression</li>
+<li>Correspondance principle</li>
+<li>No special contexts</li>
+</ul>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='left slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Uniform Access Principle</h1>
+        
+        <p>All services offered by a module should be available through a uniform
+        notation, which does not betray whether they are implemented through
+        storage or through computation</p>
+        
+        <p>Bertrand Meyer</p>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Attributes and methods should be accessed the same way</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='code slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <p><textarea class='code' display='none' mode='ruby'>person.name&#x000A;person.name=</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='code slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <p><textarea class='code' display='none' mode='ruby'>hash[i] == hash.[](i)</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='code slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <p><textarea class='code' display='none' mode='ruby'>hash[i]= value ==  hash.[]=(i, value)</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Ruby's rules</h1>
+        
+        <h2>Everything is an object</h2>
+        
+        <h2>Objects expose methods and only methods</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>There are no primitives, everything is an object</h1>
+        
+        <h3>100, true, false, nil</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='Dark slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h1>Everything is an expression</h1>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>hash.keys</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>x = hash.keys</h2>
       </div>
       <div class='spacer bottom'></div>
     </section>
     <section class='slide'>
   <div class='spacer top'></div>
   <div class='content'>
-    <h1>Some sample code</h1>
+    <h1>3 Types</h1>
 
-<p><textarea class='code' display='none' mode='ruby'>def method&#x000A;  puts "Hello, World"&#x000A;end</textarea>
+<h3>1- Assignment expressions</h3>
+
+<h3>2- Control flow expressions</h3>
+
+<h3>3- Method call expressions</h3>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>1- Assignments</h1>
+        
+        <h2>name = "hello"</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h1>2- Control Flow</h1>
+    
+    <p><textarea class='code' display='none' mode='ruby '>if @alive&#x000A;  true&#x000A;end</textarea>
 </p>
   </div>
   <div class='spacer bottom'></div>
 </section>
-    <section class='full-background slide test'>
+    <section class='slide'>
       <div class='spacer top'></div>
       <div class='content'>
-        <h1>With a Background Image</h1>
+        <h1>&amp;&amp; and || are not methods, they are control structures</h1>
       </div>
       <div class='spacer bottom'></div>
     </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>person.group &amp;&amp; person.group.name</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>name = person.name || "unknown"</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>3- Method Call</h1>
+        
+        <h2>person.name</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Nesting expressions</h2>
+
+<p><textarea class='code' display='none' mode='ruby'>if foo&#x000A;  x = 1&#x000A;else&#x000A;  x = 2&#x000A;end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Nesting expressions</h2>
+
+<p><textarea class='code' display='none' mode='ruby'>x = if foo&#x000A;      1&#x000A;    else&#x000A;      2&#x000A;    end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Grouping all kinds</h2>
+    
+    <p><textarea class='code' display='none' mode='ruby'>if person = group.person&#x000A;  person.save&#x000A;end</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='dark slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>Correspondance Principle</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>expr</h2>
+
+<h2>should be semanticaly equal to</h2>
+
+<h2>lambda { expre }</h2>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h1>Why it is important</h1>
+    
+    <p><textarea class='code' display='none' mode='ruby'>person.some_mutation</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h1>Why it is important</h1>
+    
+    <p><textarea class='code' display='none' mode='ruby'>mutex.syncronize {&#x000A;  person.some_mutation&#x000A;}</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <p><textarea class='code' display='none' mode='ruby'>common_before&#x000A;expression A&#x000A;common_after&#x000A;&#x000A;common_before&#x000A;expression B&#x000A;common_after</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <p><textarea class='code' display='none' mode='ruby'>common { expression A }&#x000A;common { expression B }</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Violations of this principle appear as unexpected failures, irregularities and restrictions</h2>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Javascript violates this principle</h2>
+        
+        <h3>this</h3>
+        
+        <h3>is not semantically equal than</h3>
+        
+        <h3>lambda { this }</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Javascript violates this principle</h2>
+        
+        <h3>return</h3>
+        
+        <h3>is not semantically equal than</h3>
+        
+        <h3>lambda { return }</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>This problem exists because there is only one type of callable</h2>
+    
+    <p><textarea class='code' display='none' mode='ruby'>lambda {&#x000A;  lambda {&#x000A;    lambda {&#x000A;      return;&#x000A;    }&#x000A;  }&#x000A;}</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Solution</h2>
+    
+    <p><textarea class='code' display='none' mode='ruby'>method {&#x000A;  lambda {&#x000A;    lambda {&#x000A;      return;&#x000A;    }&#x000A;  }&#x000A;}</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>Ruby: Method vs Proc</h2>
+        
+        <h3>Method => Scope for return, yield, super</h3>
+        
+        <h3>proc   => function to satisty the correspondance principle</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h2>why lambda?</h2>
+        
+        <h3>Anonymous method that inherits local variables</h3>
+        
+        <h3>scope for return yield and super</h3>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+      <div class='spacer top'></div>
+      <div class='content'>
+        <h1>No special contexts</h1>
+      </div>
+      <div class='spacer bottom'></div>
+    </section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h2>Every ruby program is a tree of expressions</h2>
+
+<h2>Every expression has an associated self</h2>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='code slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <p><textarea class='code' display='none' mode='ruby'>class Person&#x000A;  puts self #=> Person&#x000A;&#x000A;    def hello&#x000A;      puts self #=> <Person:sldjfkasd>&#x000A;    end&#x000A;end&#x000A;&#x000A;Person.new.hello</textarea>
+</p>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
+    <section class='slide'>
+  <div class='spacer top'></div>
+  <div class='content'>
+    <h3>This is useful to define things that might appear as language extensions</h3>
+
+<h3>attr_accessor</h3>
+
+<h3>validates_presence_of</h3>
+  </div>
+  <div class='spacer bottom'></div>
+</section>
     <!-- deck.js navigation extension -->
     <a class='deck-prev-link' href='#' title='Previous'>&#8592;</a>
     <a class='deck-next-link' href='#' title='Next'>&#8594;</a>
